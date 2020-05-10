@@ -2,7 +2,7 @@
   "name": "Go to Social Blade",
   "version": "1.2.0",
   "description": "Go to Social Blade",
-  "permissions": ["tabs"],
+  "permissions": ["contextMenus", "tabs"],
   "background": {
     "scripts": ["background.js"],
     "persistent": false
