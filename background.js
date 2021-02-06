@@ -8,7 +8,7 @@ const createTab = ({ i, url }) => {
   });
 };
 
-chrome.browserAction.onClicked.addListener((tab) => {
+chrome.action.onClicked.addListener((tab) => {
   createTab({ i: tab.index + 1, url: tab.url });
 });
 
