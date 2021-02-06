@@ -21,14 +21,18 @@ chrome.contextMenus.onClicked.addListener((info, tab) => {
 });
 
 chrome.runtime.onInstalled.addListener(() => {
+  const documentUrlPatterns = ["https://www.youtube.com/*"];
+
   chrome.contextMenus.create({
     id: "linkUrl",
     title: "Send the link url",
     contexts: ["link"],
+    documentUrlPatterns,
   });
   chrome.contextMenus.create({
     id: "pageUrl",
     title: "Send the page url",
     contexts: ["page"],
+    documentUrlPatterns,
   });
 });
