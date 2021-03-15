@@ -3,6 +3,7 @@ const createTab = ({ i, url }) => {
   const q = pathname.split("/")[2];
 
   chrome.tabs.create({
+    active: false,
     index: i,
     url: `https://socialblade.com/youtube/s/?q=${q}`,
   });
