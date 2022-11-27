@@ -1,6 +1,6 @@
 const createTab = ({ i, url }) => {
   const { pathname } = new URL(url);
-  const q = pathname.split("/")[2];
+  const q = pathname.split("/")[1];
 
   chrome.tabs.create({
     active: true,
