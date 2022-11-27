@@ -1,6 +1,6 @@
 {
   "name": "Go to Social Blade",
-  "version": "1.7.0",
+  "version": "1.8.0",
   "description": "Go to Social Blade",
   "permissions": ["contextMenus", "tabs"],
   "background": {
